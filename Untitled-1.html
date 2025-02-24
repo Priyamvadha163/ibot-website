@@ -100,16 +100,14 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    animation: backgroundScroll 20s infinite linear;
+    animation: backgroundScroll 15s infinite linear;
 }
 
 @keyframes backgroundScroll {
-    0% { background-image: url('BG.jpg');}
-    25% { background-image: url('BG4.jpg');}
-    50%{ background-image: url('BG5.jpg');}
-    75%{ background-image: url('BG.jpg');}
-    100%{background-image: url('BG5.jpg');}
-    
+    0%, 33% { background-image: url('BG.jpg'); }
+    34%, 66% { background-image: url('BG4.jpg'); }
+    67%, 100% { background-image: url('BG5.jpg'); }
+
 }
 
 
